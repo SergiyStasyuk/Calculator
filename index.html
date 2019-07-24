@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="calculator">
+
+		<input onblur="this.focus()" autofocus class="calc-display">
+
+		<div class="calculator-buttons">
+
+			<input class="smaller-font" type="button" value="CE" onclick="c()">
+			<input class="smaller-font" type="button" value="C" onclick="c()">
+			<input class="smaller-font bold" type="button" value="&#9003;" onclick="del()">
+			<input class="bigger-font" type="button" value="&divide;" onclick="insrt('/')">
+
+			<input class="bold" type="button" value="7" onclick="insrt(7)">
+			<input class="bold" type="button" value="8" onclick="insrt(8)">
+			<input class="bold" type="button" value="9" onclick="insrt(9)">
+			<input class="bigger-font" type="button" value="&times;" onclick="insrt('*')">
+
+			<input class="bold" type="button" value="4" onclick="insrt(4)">
+			<input class="bold" type="button" value="5" onclick="insrt(5)">
+			<input class="bold" type="button" value="6" onclick="insrt(6)">
+			<input class="bigger-font" type="button" value="-" onclick="insrt('-')">
+
+			<input class="bold" type="button" value="1" onclick="insrt(1)">
+			<input class="bold" type="button" value="2" onclick="insrt(2)">
+			<input class="bold" type="button" value="3" onclick="insrt(3)">
+			<input class="bigger-font" type="button" value="&plus;" onclick="insrt('+')">
+
+
+			<input class="bigger-font" id="opp" type="button" value="&plusmn;" onclick="opp()">	
+			<input class="bold" type="button" value="0" onclick="insrt(0)">
+			<input class="bigger-font" type="button" value="&comma;" onclick="insrt('.')">
+			<input class="bigger-font" type="button" value="&equals;" onclick="eql()">
+		</div>
+	</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>	
